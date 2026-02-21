@@ -1,0 +1,38 @@
+{
+  "enabled": true,
+
+  "extraction": {
+    "minExchangeLength": 20,
+    "skipHeartbeats": true,
+    "maxEntitiesPerExchange": 15,
+    "confidenceThreshold": 0.5,
+    "canonicalPredicates": [
+      "knows", "created", "uses", "located_in", "part_of",
+      "interested_in", "prefers", "works_on", "related_to",
+      "has_property", "occurred_at", "causes"
+    ]
+  },
+
+  "retrieval": {
+    "maxHops": 1,
+    "maxResults": 20,
+    "minSharedEntities": 1,
+    "cooccurrenceBoost": 0.1
+  },
+
+  "storage": {
+    "dbFile": "graph.db",
+    "maxTriplesPerEntity": 500,
+    "retentionDays": 365
+  },
+
+  "entityResolution": {
+    "method": "exact",
+    "comment_phase3": "Phase 3 upgrades to conversational resolution (see GRAPH-PLUGIN-PLAN.md 3.2)",
+    "assumeThreshold": 0.8,
+    "askThreshold": 0.4,
+    "pendingMaxAgeDays": 30,
+    "recencyBoostDays": 7,
+    "cooccurrenceMinCount": 2
+  }
+}

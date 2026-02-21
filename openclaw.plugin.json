@@ -1,0 +1,7 @@
+{
+  "id": "openclaw-plugin-graph",
+  "name": "Knowledge Graph",
+  "version": "0.1.0",
+  "description": "Entity extraction, triple storage, and graph-based retrieval for OpenClaw agents",
+  "main": "index.js"
+}
