@@ -44,7 +44,7 @@ function ensureDir(dirPath) {
 }
 
 module.exports = {
-    id: 'openclaw-plugin-graph',
+    id: 'graph',
     name: 'Knowledge Graph',
 
     register(api) {

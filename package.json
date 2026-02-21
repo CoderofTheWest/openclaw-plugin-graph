@@ -1,5 +1,5 @@
 {
-  "name": "openclaw-plugin-graph",
+  "name": "graph",
   "version": "0.1.0",
   "description": "Knowledge graph plugin for OpenClaw — entity extraction, triple storage, and graph-based retrieval",
   "main": "index.js",
